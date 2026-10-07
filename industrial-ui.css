@@ -1,0 +1,32 @@
+/* Industrial operations skin: keep the WareTrack physical simulation, remove game framing. */
+body.industrial #comboChip,
+body.industrial #scoreChip,
+body.industrial #lvlChip,
+body.industrial #soundBtn,
+body.industrial #townBtn,
+body.industrial #buildBtn,
+body.industrial #shift,
+body.industrial #missions,
+body.industrial #incident,
+body.industrial #acts{display:none!important}
+body.industrial .brand{pointer-events:none;cursor:default}
+body.industrial .ops-mode{display:flex;align-items:center;gap:7px;background:var(--cobalt-soft);color:var(--cobalt);border-radius:10px;padding:7px 10px;font-size:11px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;white-space:nowrap}
+body.industrial .ops-mode i{width:7px;height:7px;border-radius:50%;background:var(--ok);box-shadow:0 0 0 3px var(--ok-soft)}
+body.industrial .call{background:var(--ink)}
+body.industrial .ops-card{padding:12px 14px}
+body.industrial .ops-card h3{display:flex;align-items:center;gap:8px;margin:0 0 10px;font-family:var(--f-display);font-size:13px}
+body.industrial .ops-card h3 .pill{margin-left:auto}
+body.industrial .ops-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+body.industrial .ops-metric{padding:8px 9px;border:1px solid var(--line);border-radius:9px;background:rgba(255,255,255,.62)}
+body.industrial .ops-metric label{display:block;color:var(--ink-3);font-size:10px;text-transform:uppercase;letter-spacing:.06em}
+body.industrial .ops-metric b{display:block;margin-top:2px;font-family:var(--f-mono);font-size:15px}
+body.industrial .ops-note{margin:10px 0 0;color:var(--ink-2);font-size:11px;line-height:1.4}
+body.industrial .ops-note strong{color:var(--ink)}
+body.industrial #siteDD .ddi .pill{display:none}
+body.industrial #siteDD .ddi small{font-size:10.5px}
+body.industrial #siteDD .ddnote{display:none}
+body.industrial .panel .tabs button{font-size:11.5px}
+body.industrial .panel .tabs .count{font-size:9.5px}
+body.industrial .track .th{font-weight:800}
+body.industrial .track .th::first-letter{color:var(--cobalt)}
+@media (max-width:1160px){body.industrial .ops-mode{display:none}}
